@@ -1,0 +1,394 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+    margin: 0px;
+}
+
+
+/*margines na całe body*/
+
+body {
+    margin: 0px;
+}
+
+
+/*menu ma byc zafiksowane, do tego pełna szerokość*/
+
+#menu {
+    position: fixed;
+    width: 100%;
+    text-align: right;
+    margin-right: 35px;
+    background: #f9fcfe;
+    z-index: 1;
+}
+
+
+/*li jeden pod drugim*/
+
+#menu ul li {
+    display: inline-block;
+    margin: 0 2%;
+}
+
+
+/*sterujemy tekstem w odnosnikach*/
+
+#menu ul li a {
+    text-decoration: none;
+    color: #1ac056;
+    transition-duration: 0.5s;
+}
+
+
+/*zmiana koloru na hover*/
+
+#menu ul li a:hover {
+    color: #000;
+}
+
+
+/*dla heada wysokosc 95% okna przegladarki*/
+
+#head {
+    text-align: center;
+    position: relative;
+    height: 95vh;
+    /*    background-position: bottom;*/
+    background-image: url('../img/header-background.jpg');
+    background-size: cover;
+}
+
+
+/*pozycja glownego headera*/
+
+#main-name {
+    position: absolute;
+    width: 100%;
+    top: 35%;
+}
+
+
+/*ustawiam czcionke i kolor dla calego headera*/
+
+
+/*imie i nazwisko ze zmienionym drugim elementem*/
+
+#main-name .name {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    color: white;
+}
+
+#main-header-text {
+    font-size: 56px;
+}
+
+#main-header-text .name {
+    font-weight: bold;
+    color: #1ac056;
+}
+
+
+/*zawod*/
+
+#main-name h2 {
+    font-size: 32px;
+    font-weight: 100;
+}
+
+
+/*marginesy i czcionka nagłowka - uzywana do innych sekcji tez!*/
+
+.sec-head {
+    margin: 30px;
+    font-weight: lighter;
+}
+
+
+/*drugi wyraz na zielono*/
+
+.sec-head .name {
+    color: #1ac056;
+    font-weight: bold;
+}
+
+
+/* SEKCJA O MNIE */
+
+#bio {
+    padding: 20px;
+    background-color: #f9fcfe;
+    text-align: center;
+    box-shadow: 10px 5px 5px #888888;
+}
+
+#bio-content {
+    padding: 0 20px;
+    /*likwidacja floata */
+    overflow: hidden;
+}
+
+
+/*stylowanie diva zdjęcia*/
+
+
+/*figure 50% szerokoesci */
+
+#bio-content #portrait {
+    display: inline-block;
+    width: 50%;
+    float: left;
+    margin: auto;
+}
+
+
+/*stylowanie samego zdjecia*/
+
+#bio-content #portrait img {
+    border-radius: 10px;
+    border: 5px solid white;
+    width: 40%;
+}
+
+
+/*div z opisem, 50% szerokosci do lewej*/
+
+#bio-content #descr {
+    display: inline-block;
+    margin: 0px;
+    float: left;
+    width: 50%;
+}
+
+#bio-content p {
+    margin: 0px;
+    text-align: left;
+}
+
+
+/*KOLEJNA SEKCJA UMIEJETNOSCI*/
+
+#skills {
+    padding: 20px;
+    text-align: center;
+}
+
+#skills-content {
+    padding: 20px 80px;
+}
+
+#skills-descr {
+    margin: auto;
+}
+
+#skills-icons {
+    margin-top: 30px;
+}
+
+
+/*stylowanie ikon*/
+
+.icons {
+    display: inline-block;
+}
+
+
+/*
+.icons img{
+    width: 75px;
+}
+*/
+
+
+/*KOLEJNA SEKCJA MOJE PORTFOLIO*/
+
+#portfolio {
+    text-align: center;
+    padding: 20px;
+}
+
+
+/*NOWE DIVY*/
+
+#port-sec {
+    width: 90vw;
+    padding: 10px;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+/*glowne divy z tlem*/
+
+.port-cont {
+    display: inline-block;
+    width: 33.3%;
+    height: 300px;
+    float: left;
+}
+
+
+/*rozne tla*/
+
+#port1 {
+    background-image: url('../img/portfolio1.jpg');
+}
+
+#port2 {
+    background-image: url('../img/portfolio2.jpg');
+}
+
+#port3 {
+    background-image: url('../img/portfolio4.jpg');
+}
+
+
+/*div ukryty*/
+
+#port-sec .content-hidden {
+    opacity: 0.0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(42, 61, 79, 0.5);
+    top: 0px;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    padding: 5%;
+}
+
+#port-sec .content-hidden:hover {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+
+/*wewnetrzna czesc z ramką*/
+
+#port-sec .inner-content {
+    /*    display: inline-block;*/
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border: 2px solid white;
+    overflow: hidden;
+    color: white;
+    text-decoration-style: solid;
+}
+
+#port-sec .inner-content p {
+    margin: 0;
+}
+
+#port-sec .inner-content h3,
+#port-sec .inner-content h4 {
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
+
+#port-sec .inner-content h3 {
+    top: 25%;
+}
+
+
+/*FOOTER - tu tez nic sie nie bedzie dzialo ?*/
+
+#foot {
+    height: 70vh;
+    padding: 10px;
+    background-color: #213b50;
+    text-align: left;
+    overflow: hidden;
+}
+
+#foot .sec-head {
+    font-size: 36px;
+    margin: 30px;
+    font-weight: 100;
+    color: #FFF;
+}
+
+
+/*drugi wyraz na zielono*/
+
+#foot .sec-head .name {
+    color: #1ac056;
+    font-weight: normal;
+}
+
+#contact {
+    display: inline-block;
+    width: 50%;
+    float: left;
+    padding: 20px 0 0 32px;
+    text-decoration: none;
+}
+
+#icons img{
+    margin-right: 15px;
+    width: 40px;    
+}
+
+#form {
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+
+#form input,
+#form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #204060;
+    border: none;
+    color: #c0c0c0;
+}
+
+#form input{
+    height: 30px;
+}
+
+#form input[type="submit"]{
+    width: 100px;
+    height: 50px;
+    font-size: 16px;
+    color: white;
+    border: 1px solid white;    
+    background-color:  #1ac056;
+    text-transform: uppercase;
+}
+
+#form input[type="submit"]:hover{
+    cursor: pointer;    
+}
+
+#contact-content,
+#phone-mail{
+    color: white;
+    font-style: normal;
+    margin-bottom: 40px;
+}
+
+
+#phone-mail a{
+    text-decoration: none;
+    color: #1ac056;
+}
+
+/*copyright*/
+#copyright {
+    background: #000;
+    color: white;
+    text-align: left;
+    height: 30px;
+    
+}
+
+#copyright p{
+    margin: 0;
+}
+

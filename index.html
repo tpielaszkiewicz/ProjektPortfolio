@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,200,400&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!--nawigacja-->
+    <nav id="menu">
+        <ul>
+            <li class="menu-item"><a href="#bio">o mnie</a></li>
+            <li class="menu-item"><a href="#skills">umiejętności</a></li>
+            <li class="menu-item"><a href="#portfolio">portfolio</a></li>
+            <li class="menu-item"><a href="#foot">kontakt</a></li>
+        </ul>
+    </nav>
+    <!--glowny div z obrazkiem i naglowkiem -->
+    <header id="head">
+        <div id="main-name">
+            <h1 id="main-header-text" class="name">
+                Tomasz
+                <span class="name">Pielaszkiewicz</span>
+            </h1>
+            <h2 id="sub-header-text" class="name">Front-End Developer</h2>
+        </div>
+    </header>
+
+    <section id="bio">
+        <h2 class="sec-head">
+            <!--           tosamo-->
+            O
+            <span class="name">mnie</span>
+        </h2>
+        <article id="bio-content">
+            <!--            <div id="portrait-cont">-->
+            <figure id="portrait">
+                <img src="img/jan-nowak2.jpg" alt="Main">
+            </figure>
+            <!--            </div>-->
+            <div id="descr">
+                <p id="bio-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, eos numquam velit pariatur nihil libero, non voluptatem mollitia voluptas, dolores ipsam unde odit natus quia! Itaque fugit illo sapiente, laborum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos beatae, sint ut impedit commodi, cupiditate minima iure. Porro qui consectetur amet delectus incidunt consequuntur accusamus doloremque illum dolores! Voluptas, quasi. </p>
+            </div>
+        </article>
+    </section>
+
+    <section id="skills">
+        <h2 class="sec-head">
+            Moje
+            <span class="name">umiejętności</span>
+        </h2>
+        <article id="skills-content">
+            <p id="skills-descr">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni iste nam possimus perspiciatis, id, facere magnam maxime esse ducimus laudantium! Amet harum velit enim cum debitis at perspiciatis, sapiente dolor?
+            </p>
+            <div id="skills-icons">
+                <figure class="icons">
+                    <img src="icons/css3.png" alt="Main">
+                    <figcaption>CSS3</figcaption>
+                </figure>
+                <figure class="icons">
+                    <img src="icons/html5.png" alt="Main">
+                    <figcaption>HTML 5</figcaption>
+                </figure>
+                <figure class="icons">
+                    <img src="icons/jquery.png" alt="Main">
+                    <figcaption>jQuery</figcaption>
+                </figure>
+                <figure class="icons">
+                    <img src="icons/js.png" alt="Main">
+                    <figcaption>JavaScript</figcaption>
+                </figure>
+            </div>
+        </article>
+    </section>
+
+    <section id="portfolio">
+        <h2 class="sec-head">
+            Moje
+            <span class="name">portfolio</span>
+        </h2>
+
+        <article id="port-sec">
+            <div id="port1" class="port-cont">
+                <div id="content1" class="content-hidden">
+                    <div class="inner-content">
+                        <h3>Lorem Ipsum</h3>
+                        <p>Opis projektu Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <h4>Wykorzystane technologie:</h4>
+                        <p>HTML5, CSS3, JavaScript, Bootstrap</p>
+                    </div>
+                </div>
+            </div>
+            <div id="port2" class="port-cont">
+                <div id="content2" class="content-hidden">
+                    <div class="inner-content">
+                        <h3>Lorem Ipsum</h3>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <h4>Wykorzystane technologie:</h4>
+                        <p>HTML5, CSS3, JavaScript, Bootstrap</p>
+
+                    </div>
+                </div>
+
+            </div>
+            <div id="port3" class="port-cont">
+                <div id="content3" class="content-hidden">
+                    <div class="inner-content">
+                        <h3>Lorem Ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h4>Wykorzystane technologie:</h4>
+                        <p>HTML5, CSS3, JavaScript, Bootstrap</p>
+
+                    </div>
+                </div>
+            </div>
+        </article>
+
+    </section>
+
+
+    <footer id="foot">
+        <h2 class="sec-head">
+            Tomasz
+            <span class="name">Pielaszkiewicz</span>
+        </h2>
+        <div id="contact">
+            <address id="contact-content">
+                 ul. Mostowa 6/13<br /> 31-061 Kraków<br />
+            </address>
+            <address id="phone-mail">
+            tel. 654 987 453 <br/>
+            e-mail:
+            <a href="mailto:l.badocha@arena108.pl">tpielaszkiewicz@gmail.com</a>
+            </address>
+            <div id="icons">
+                <a href="https://www.facebook.com/tomek.pielaszkiewicz?ref=br_rs"><img src="img/facebook.png" alt=""></a>
+                <a href="https://www.twitter.com"><img src="img/twitter.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/tomasz-pielaszkiewicz-aa4bb812b?ppe=1"><img src="img/linkedin.png" alt=""></a>
+                <a href="https://www.instagram.com"><img src="img/instagram.png" alt=""></a>
+            </div>
+        </div>
+        <form action="" id="form">
+            <form action="https://formspree.io/tpielaszkiewicz@gmail.com" method="POST">
+
+                <input type="text" name="name" id="name" placeholder="Imię i nazwisko"><br>
+
+                <input type="email" id="email" name="_replyto" placeholder="Adres e-mail"><br>
+
+                <textarea maxlength="100" name="textarea" id="textarea" cols="30" rows="5" placeholder="Wiadomośc"></textarea><br>
+                    
+                <input type="submit" value="send">
+            </form>
+
+        </form>
+    </footer>
+    <div id="copyright">
+        <p>Copright Tomasz Pielaszkiewicz &copy;</p>
+    </div>
+
+
+</body>
+
+</html>
