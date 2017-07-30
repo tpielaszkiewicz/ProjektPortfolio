@@ -299,6 +299,7 @@ body {
 
 #foot {
     height: 70vh;
+    min-height: 385px;
     padding: 10px;
     background-color: #213b50;
     text-align: left;
@@ -389,6 +390,7 @@ body {
 }
 
 #copyright p{
+    min-height: 20px;
     margin: 0;
 }
 
