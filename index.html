@@ -5,21 +5,36 @@
     <meta charset="UTF-8">
     <title>Document</title>
 
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,200,400&amp;subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,400&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
 
 </head>
 
 <body>
     <!--nawigacja-->
     <nav id="menu">
-        <ul>
+        <ul class="displayed">
             <li class="menu-item"><a href="#bio">o mnie</a></li>
             <li class="menu-item"><a href="#skills">umiejętności</a></li>
             <li class="menu-item"><a href="#portfolio">portfolio</a></li>
             <li class="menu-item"><a href="#foot">kontakt</a></li>
         </ul>
+        <div class="dropdown">
+            <img class="dropbtn" src="img/menu-icon.png" alt="">
+            <div id="hidden-menu">
+                <ul>
+                    <li class="menu-item-short"><a href="#bio">o mnie</a></li>
+                    <li class="menu-item-short"><a href="#skills">umiejętności</a></li>
+                    <li class="menu-item-short"><a href="#portfolio">portfolio</a></li>
+                    <li class="menu-item-short"><a href="#foot">kontakt</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
     <!--glowny div z obrazkiem i naglowkiem -->
     <header id="head">
@@ -146,17 +161,17 @@
                 <a href="https://www.instagram.com"><img src="img/instagram.png" alt=""></a>
             </div>
         </div>
-        
-            <form id="form" action="https://formspree.io/tpielaszkiewicz@gmail.com" method="POST">
 
-                <input type="text" name="name" id="name" placeholder="Imię i nazwisko"><br>
+        <form id="form" action="https://formspree.io/tpielaszkiewicz@gmail.com" method="POST">
 
-                <input type="email" id="email" name="_replyto" placeholder="Podaj email"><br>
+            <input type="text" name="name" id="name" placeholder="Imię i nazwisko"><br>
 
-                <textarea maxlength="100" name="textarea" id="textarea" cols="30" rows="5" placeholder="Wiadomośc"></textarea><br>
-                    
-                <input type="submit" value="Send">
-            </form>
+            <input type="email" id="email" name="_replyto" placeholder="Podaj email"><br>
+
+            <textarea maxlength="100" name="textarea" id="textarea" cols="30" rows="5" placeholder="Wiadomośc"></textarea><br>
+
+            <input type="submit" value="Send">
+        </form>
 
     </footer>
     <div id="copyright">

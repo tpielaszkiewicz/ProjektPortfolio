@@ -29,15 +29,15 @@ body {
 
 /*li jeden pod drugim*/
 
-#menu ul li {
+#menu .menu-item {
     display: inline-block;
-    margin: 0 2%;
+    margin: 0 20px;
 }
 
 
 /*sterujemy tekstem w odnosnikach*/
 
-#menu ul li a {
+#menu .menu-item a {
     text-decoration: none;
     color: #1ac056;
     transition-duration: 0.5s;
@@ -46,12 +46,57 @@ body {
 
 /*zmiana koloru na hover*/
 
-#menu ul li a:hover {
+#menu .menu-item a:hover {
     color: #000;
 }
 
+.dropdown {
+    display: none;
+    position: relative;
+   
+}
+
+#dropdown img {
+    height: 30px;
+}
+
+#hidden-menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    right: 0px;
+    height: 60vh;
+    width: 200px;
+    text-align: center;
+}
+
+#hidden-menu ul {
+    margin: 0px;
+}
+
+#hidden-menu ul li{
+    list-style-type: none;
+    height: 50px;
+    background-color: #f9fcfe;
+    padding-top: 15px;
+    margin: 0px;
+    border: 1px solid #1ac056;
+    border-style:ridge;
+/*    border: 1px solid black;*/
+}
+
+#hidden-menu ul li a{
+    color: #1ac056;
+    text-decoration: none;
+    
+}
+
+.dropdown:hover #hidden-menu {
+    display: inline-block;
+}
 
 /*dla heada wysokosc 95% okna przegladarki*/
+
 
 #head {
     text-align: center;
@@ -71,7 +116,9 @@ body {
     top: 35%;
 }
 
-
+.dropdown:hover{
+    cursor: pointer;
+}
 /*ustawiam czcionke i kolor dla calego headera*/
 
 
