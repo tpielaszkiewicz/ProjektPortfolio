@@ -47,7 +47,9 @@
     }
 }
 
-@media screen and (max-width: 480px) {
+@media (orientation:portrait){
+
+/*@media screen and (max-width: 480px) {*/
     #head {
         height: 85vh;
         background-position: bottom;
@@ -76,7 +78,7 @@
     }
     
     .dropdown img{
-        height: 30px;
+        height: 50px;
     }
     
     
