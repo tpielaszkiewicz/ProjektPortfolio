@@ -53,20 +53,18 @@ body {
 .dropdown {
     display: none;
     position: relative;
-   
+    width: 100%;
 }
 
-#dropdown img {
-    height: 70px;
+.dropbtn {
+    color: #1ac056;
+
 }
 
 #hidden-menu {
     display: none;
-    position: absolute;
     z-index: 1;
     right: 0px;
-    height: 60vh;
-    width: 200px;
     text-align: center;
 }
 
@@ -74,29 +72,28 @@ body {
     margin: 0px;
 }
 
-#hidden-menu ul li{
+#hidden-menu ul li {
     list-style-type: none;
     height: 50px;
     background-color: #f9fcfe;
     padding-top: 15px;
     margin: 0px;
-    border: 1px solid #1ac056;
-    border-style:ridge;
-/*    border: 1px solid black;*/
+/*    border: 1px solid #1ac056;*/
+/*    border-style: ridge;*/
+    /*    border: 1px solid black;*/
 }
 
-#hidden-menu ul li a{
+#hidden-menu ul li a {
     color: #1ac056;
     text-decoration: none;
-    
 }
 
 .dropdown:hover #hidden-menu {
     display: inline-block;
 }
 
-/*dla heada wysokosc 95% okna przegladarki*/
 
+/*dla heada wysokosc 95% okna przegladarki*/
 
 #head {
     text-align: center;
@@ -116,9 +113,11 @@ body {
     top: 35%;
 }
 
-.dropdown:hover{
+.dropdown:hover {
     cursor: pointer;
 }
+
+
 /*ustawiam czcionke i kolor dla calego headera*/
 
 
@@ -198,7 +197,7 @@ body {
 #bio-content #portrait img {
     border-radius: 10px;
     border: 5px solid white;
-    width: 40%;
+    width: 55%;
 }
 
 
@@ -325,32 +324,52 @@ body {
     overflow: hidden;
     color: white;
     text-decoration-style: solid;
+    position: relative;
 }
 
 #port-sec .inner-content p {
     margin: 0;
 }
 
-#port-sec .inner-content h3,
 #port-sec .inner-content h4 {
-    margin-top: 25px;
-    margin-bottom: 0px;
+    font-size: 18px;
+    margin: 15px 0;
 }
 
 #port-sec .inner-content h3 {
-    top: 25%;
+    font-size: 22px;
+    margin: 15px 0;
+}
+
+#port-sec .inner-content p {
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+#port-sec .fa {
+    font-size: 28px;
+}
+
+.content-pos {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 
 /*FOOTER - tu tez nic sie nie bedzie dzialo ?*/
 
 #foot {
-    height: 70vh;
     min-height: 385px;
     padding: 10px;
     background-color: #213b50;
     text-align: left;
     overflow: hidden;
+/*    taki jak copyright section*/
+    padding-bottom:3vh; 
 }
 
 #foot .sec-head {
@@ -371,14 +390,22 @@ body {
 #contact {
     display: inline-block;
     width: 50%;
+    height: 100%;
     float: left;
     padding: 20px 0 0 32px;
     text-decoration: none;
 }
 
-#icons img{
+
+/*dzieki temu po zwezeniu ikonka nam spadnie na srodek*/
+#icons{
+    display: inline-block;
+    text-align:center;
+}
+
+#icons img {
     margin-right: 15px;
-    width: 40px;    
+    width: 40px;
 }
 
 #form {
@@ -396,48 +423,47 @@ body {
     color: #c0c0c0;
 }
 
-#form input{
+#form input {
     height: 30px;
 }
 
-#form input[type="submit"]{
+#form input[type="submit"] {
     width: 100px;
     height: 50px;
     font-size: 16px;
     color: white;
-    border: 1px solid white;    
-    background-color:  #1ac056;
+    border: 1px solid white;
+    background-color: #1ac056;
     text-transform: uppercase;
 }
 
-#form input[type="submit"]:hover{
-    cursor: pointer;    
+#form input[type="submit"]:hover {
+    cursor: pointer;
 }
 
 #contact-content,
-#phone-mail{
+#phone-mail {
     color: white;
     font-style: normal;
     margin-bottom: 40px;
 }
 
-
-#phone-mail a{
+#phone-mail a {
     text-decoration: none;
     color: #1ac056;
 }
 
+
 /*copyright*/
+
 #copyright {
     background: #000;
     color: white;
     text-align: left;
     height: 3vh;
-    
 }
 
-#copyright p{
+#copyright p {
     min-height: 20px;
     margin: 0;
 }
-

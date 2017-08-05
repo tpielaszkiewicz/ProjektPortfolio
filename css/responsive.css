@@ -1,87 +1,92 @@
 /*szerokosc hedaera, co wplywa na fote*/
+
 @media screen and (min-width: 992px) {
     #head {
         height: 90vh;
     }
-    
-    #main-name h1{
+    #main-name h1 {
         font-size: 48px;
     }
-    
-    #main-name h2{
+    #main-name h2 {
         font-size: 36px;
     }
 }
 
-
-@media screen and (max-width: 992px) and (min-width: 768px){
+@media screen and (max-width: 992px) and (min-width: 768px) {
     #head {
         height: 90vh;
     }
-    
-    #main-name h1{
+    #main-name h1 {
         font-size: 42px;
     }
-    
-    #main-name h2{
+    #main-name h2 {
         font-size: 32px;
+    }
+    #bio-content #portrait img {
+        width: 65%;
     }
 }
 
-@media screen and (max-width: 768px) and (min-width: 480px){
+@media screen and (max-width: 768px) and (min-width: 480px) {
     #head {
         height: 85vh;
         background-position: bottom;
     }
-    
-    #main-name h1{
+    #main-name h1 {
         font-size: 36px;
     }
-    
-    #main-name h2{
+    #main-name h2 {
         font-size: 28px;
     }
-    
-    #menu ul li{
+    #menu ul li {
         margin: 0 10px;
+    }
+    #bio-content #portrait img {
+        width: 75%;
     }
 }
 
-@media (orientation:portrait){
-
-/*@media screen and (max-width: 480px) {*/
+@media (orientation:portrait) {
+    /*@media screen and (max-width: 480px) {*/
     #head {
         height: 85vh;
         background-position: bottom;
     }
-    
-    #main-name h1{
+    #main-name h1 {
         font-size: 32px;
     }
-    
-    #main-name h2{
+    #main-name h2 {
         font-size: 24px;
     }
-    
-    #menu .displayed{
+    /*    zmiana wyswietlania menu*/
+    #menu .displayed {
         display: none;
     }
-    
-    #menu .displayed li{
-        margin: 0 5px;
-    }
-    
     .dropdown {
-        display: inline-block;
+        display: block;
         padding: 10px;
-        
+    }
+    #bio-content #portrait img {
+        width: 95%;
     }
     
-    .dropdown img{
-        height: 50px;
+    /*    portfolio*/
+/*
+    #port-sec .inner-content h4 {
+        font-size: 10px;
+        margin: 5px 0;
     }
-    
-    
-    
+    #port-sec .inner-content h3 {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+    #port-sec .inner-content p {
+        font-size: 8px;
+        margin-bottom: 5px;
+    }
+    #port-sec .fa {
+        font-size: 14px;
+    }
+*/
+    /*    footer */
 }
-
