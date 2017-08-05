@@ -88,17 +88,29 @@
     }
     /*    portfolio*/
     .port-cont {
+        width: 100%;
+        height: 400px;
+    }
+    .port-cont {
         height: 400px;
         width: 100%;
     }
     /*    footer */
+    #foot .sec-head {
+        margin: 20px;
+    }
     #foot #contact {
         width: 100%;
+        padding: 0 0 0 20px;
     }
     #foot #form {
         width: 100%;
         clear: both;
         padding: 10px;
+    }
+    #contact-content,
+    #phone-mail {
+        margin-bottom: 20px;
     }
 }
 
@@ -138,19 +150,22 @@
         width: 100%;
         height: 400px;
     }
-    /*
-    #port-sec .port-cont:last-child {
-        width: 100%;
-        height: 300px;
-    }
-*/
+
     /*    footer */
+    #foot .sec-head {
+        margin: 20px;
+    }
     #foot #contact {
         width: 100%;
+        padding: 0 0 0 20px;
     }
     #foot #form {
         width: 100%;
         clear: both;
         padding: 10px;
+    }
+    #contact-content,
+    #phone-mail {
+        margin-bottom: 20px;
     }
 }
