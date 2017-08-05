@@ -44,7 +44,6 @@
     #bio-content #portrait img {
         width: 75%;
     }
-    
     /*    portfolio*/
     .port-cont {
         height: 400px;
@@ -90,13 +89,17 @@
     /*    portfolio*/
     .port-cont {
         height: 400px;
-        width: 50%;
-    }
-    #port-sec .port-cont:last-child {
         width: 100%;
-        height: 300px;
     }
     /*    footer */
+    #foot #contact {
+        width: 100%;
+    }
+    #foot #form {
+        width: 100%;
+        clear: both;
+        padding: 10px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -132,12 +135,22 @@
     }
     /*    portfolio*/
     .port-cont {
-        width: 50%;
+        width: 100%;
         height: 400px;
     }
+    /*
     #port-sec .port-cont:last-child {
         width: 100%;
         height: 300px;
     }
+*/
     /*    footer */
+    #foot #contact {
+        width: 100%;
+    }
+    #foot #form {
+        width: 100%;
+        clear: both;
+        padding: 10px;
+    }
 }
