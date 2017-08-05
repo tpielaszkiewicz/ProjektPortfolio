@@ -58,7 +58,6 @@ body {
 
 .dropbtn {
     color: #1ac056;
-
 }
 
 #hidden-menu {
@@ -78,8 +77,8 @@ body {
     background-color: #f9fcfe;
     padding-top: 15px;
     margin: 0px;
-/*    border: 1px solid #1ac056;*/
-/*    border-style: ridge;*/
+    /*    border: 1px solid #1ac056;*/
+    /*    border-style: ridge;*/
     /*    border: 1px solid black;*/
 }
 
@@ -273,8 +272,9 @@ body {
 .port-cont {
     display: inline-block;
     width: 33.3%;
-    height: 300px;
+    height: 350px;
     float: left;
+    background-size: cover;
 }
 
 
@@ -350,6 +350,10 @@ body {
     font-size: 28px;
 }
 
+#port-sec .fa:hover {
+    color: #1ac056;
+}
+
 .content-pos {
     position: absolute;
     top: 50%;
@@ -368,8 +372,8 @@ body {
     background-color: #213b50;
     text-align: left;
     overflow: hidden;
-/*    taki jak copyright section*/
-    padding-bottom:3vh; 
+    /*    taki jak copyright section*/
+    padding-bottom: 3vh;
 }
 
 #foot .sec-head {
@@ -398,9 +402,10 @@ body {
 
 
 /*dzieki temu po zwezeniu ikonka nam spadnie na srodek*/
-#icons{
+
+#icons {
     display: inline-block;
-    text-align:center;
+    text-align: center;
 }
 
 #icons img {
