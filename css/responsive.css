@@ -44,6 +44,10 @@
     #bio-content #portrait img {
         width: 75%;
     }
+    /*    umiejetnosci*/
+    #skills-content {
+        padding: 20px 40px;
+    }
     /*    portfolio*/
     .port-cont {
         height: 400px;
@@ -85,6 +89,10 @@
     }
     #bio-content #portrait img {
         width: 85%;
+    }
+    /*    umiejetnosci*/
+    #skills-content {
+        padding: 20px 40px;
     }
     /*    portfolio*/
     .port-cont {
@@ -145,12 +153,15 @@
     #bio-content #portrait img {
         width: 85%;
     }
+    /*    umiejetnosci*/
+    #skills-content {
+        padding: 20px 40px;
+    }
     /*    portfolio*/
     .port-cont {
         width: 100%;
-        height: 400px;
+        height: 300px;
     }
-
     /*    footer */
     #foot .sec-head {
         margin: 20px;
