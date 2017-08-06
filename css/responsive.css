@@ -59,6 +59,9 @@
     }
 }
 
+
+/*NA TELEFONY KOMÓRKOWE*/
+
 @media (orientation:portrait) {
     /*@media screen and (max-width: 480px) {*/
     #head {
@@ -119,6 +122,34 @@
     #contact-content,
     #phone-mail {
         margin-bottom: 20px;
+    }
+    /*    nowy sposob z labelka i checkboxem*/
+    /*    pokazujemy tylko label, checkbox jest 'w tle'*/
+    #menu .toggle {
+        display: block;
+        background-color: #f9fcfe;
+        padding: 0 20px;
+        color: #1AC056;
+        line-height: 50px;
+        /*centruje napis pionowe wzgledem wysokosci NAV */
+        text-align: right;
+    }
+    #name ul {
+        display: none;
+    }
+    /*    jezeli checkboxe jest checke to złap ul (bliski sonsiad i jąpokaz)*/
+    /*    samo display blok załatwi nam brak kropeczek*/
+    #menu #drop:checked+ul {
+        display: block;
+        margin: 0;
+    }
+    #menu ul {
+        background-color: #f9fcfe;
+    }
+    /*    to jest nasze li oklasowane, wyswietlamy li jako bloki */
+    #menu ul .menu-item {
+        display: block;
+        margin: 0px 15px 15px 0px;
     }
 }
 

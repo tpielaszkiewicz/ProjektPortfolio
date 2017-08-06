@@ -1,474 +1,457 @@
-* {
-    box-sizing: border-box;
-}
-
-html {
-    font-family: 'Lato', sans-serif;
-    margin: 0px;
-}
-
-
-/*margines na całe body*/
-
-body {
-    margin: 0px;
-}
-
-
-/*menu ma byc zafiksowane, do tego pełna szerokość*/
-
-#menu {
-    position: fixed;
-    width: 100%;
-    text-align: right;
-    margin-right: 35px;
-    background: #f9fcfe;
-    z-index: 1;
-}
-
-
-/*li jeden pod drugim*/
-
-#menu .menu-item {
-    display: inline-block;
-    margin: 0 20px;
-}
-
-
-/*sterujemy tekstem w odnosnikach*/
-
-#menu .menu-item a {
-    text-decoration: none;
-    color: #1ac056;
-    transition-duration: 0.5s;
-}
-
-
-/*zmiana koloru na hover*/
-
-#menu .menu-item a:hover {
-    color: #000;
-}
-
-.dropdown {
-    display: none;
-    position: relative;
-    width: 100%;
-}
-
-.dropbtn {
-    color: #1ac056;
-}
-
-#hidden-menu {
-    display: none;
-    z-index: 1;
-    right: 0px;
-    text-align: center;
-}
-
-#hidden-menu ul {
-    margin: 0px;
-}
-
-#hidden-menu ul li {
-    list-style-type: none;
-    height: 50px;
-    background-color: #f9fcfe;
-    padding-top: 15px;
-    margin: 0px;
-    /*    border: 1px solid #1ac056;*/
-    /*    border-style: ridge;*/
-    /*    border: 1px solid black;*/
-}
-
-#hidden-menu ul li a {
-    color: #1ac056;
-    text-decoration: none;
-}
-
-.dropdown:hover #hidden-menu {
-    display: inline-block;
-}
-
-
-/*dla heada wysokosc 95% okna przegladarki*/
-
-#head {
-    text-align: center;
-    position: relative;
-    height: 95vh;
-    /*    background-position: bottom;*/
-    background-image: url('../img/header-background.jpg');
-    background-size: cover;
-}
-
-
-/*pozycja glownego headera*/
-
-#main-name {
-    position: absolute;
-    width: 100%;
-    top: 35%;
-}
-
-.dropdown:hover {
-    cursor: pointer;
-}
-
-
-/*ustawiam czcionke i kolor dla calego headera*/
-
-
-/*imie i nazwisko ze zmienionym drugim elementem*/
-
-#main-name .name {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    color: white;
-}
-
-#main-header-text {
-    font-size: 56px;
-}
-
-#main-header-text .name {
-    font-weight: bold;
-    color: #1ac056;
-}
-
-
-/*zawod*/
-
-#main-name h2 {
-    font-size: 32px;
-    font-weight: 100;
-}
-
-
-/*marginesy i czcionka nagłowka - uzywana do innych sekcji tez!*/
-
-.sec-head {
-    margin: 30px;
-    font-weight: lighter;
-}
-
-
-/*drugi wyraz na zielono*/
-
-.sec-head .name {
-    color: #1ac056;
-    font-weight: bold;
-}
-
-
-/* SEKCJA O MNIE */
-
-#bio {
-    padding: 20px;
-    background-color: #f9fcfe;
-    text-align: center;
-    box-shadow: 10px 5px 5px #888888;
-}
-
-#bio-content {
-    padding: 0 20px;
-    /*likwidacja floata */
-    overflow: hidden;
-}
-
-
-/*stylowanie diva zdjęcia*/
-
-
-/*figure 50% szerokoesci */
-
-#bio-content #portrait {
-    display: inline-block;
-    width: 50%;
-    float: left;
-    margin: auto;
-}
-
-
-/*stylowanie samego zdjecia*/
-
-#bio-content #portrait img {
-    border-radius: 10px;
-    border: 5px solid white;
-    width: 55%;
-}
-
-
-/*div z opisem, 50% szerokosci do lewej*/
-
-#bio-content #descr {
-    display: inline-block;
-    margin: 0px;
-    float: left;
-    width: 50%;
-}
-
-#bio-content p {
-    margin: 0px;
-    text-align: left;
-}
-
-
-/*KOLEJNA SEKCJA UMIEJETNOSCI*/
-
-#skills {
-    padding: 20px;
-    text-align: center;
-}
-
-#skills-content {
-    padding: 20px 80px;
-}
-
-#skills-descr {
-    margin: auto;
-}
-
-#skills-icons {
-    margin-top: 30px;
-}
-
-
-/*stylowanie ikon*/
-
-.icons {
-    display: inline-block;
-}
-
-
-/*
-.icons img{
-    width: 75px;
-}
+    * {
+        box-sizing: border-box;
+    }
+    
+    html {
+        font-family: 'Lato', sans-serif;
+        margin: 0px;
+    }
+    /*margines na całe body*/
+    
+    body {
+        margin: 0px;
+    }
+    /*menu ma byc zafiksowane, do tego pełna szerokość*/
+    
+    #menu {
+        position: fixed;
+        width: 100%;
+        text-align: right;
+        background: #f9fcfe;
+        z-index: 1;
+    }
+    /*li jeden obok drugiego*/
+    
+    #menu .menu-item {
+        display: inline-block;
+        margin: 0 20px;
+    }
+    /*sterujemy tekstem w odnosnikach*/
+    
+    #menu .menu-item a {
+        text-decoration: none;
+        color: #1ac056;
+        /*    na hover*/
+        transition-duration: 0.5s;
+    }
+    /*zmiana koloru na hover*/
+    
+    #menu a:hover {
+        color: #000;
+    }
+    /*div z poczatku niewyswietlany*/
+    /*    mozna go tez zrobic na zasadzie label + checkbox
+https://stackoverflow.com/questions/6293588/how-to-create-an-html-checkbox-with-a-clickable-label*/
+    
+    .dropdown:hover #hidden-menu {
+        display: inline-block;
+    }
+    
+    .dropdown {
+        display: none;
+        width: 100%;
+    }
+    
+    .dropbtn {
+        color: #1ac056;
+    }
+    /*    to menu tez na i */
+    
+    #hidden-menu {
+        display: none;
+        z-index: 1;
+        text-align: center;
+    }
+    /*zeby nam nie rozpechało menu*/
+    
+    #hidden-menu ul {
+        margin: 0px;
+    }
+    
+    #hidden-menu ul li {
+        list-style-type: none;
+        height: 50px;
+        background-color: #f9fcfe;
+        padding-top: 15px;
+    }
+    
+    #hidden-menu ul li a {
+        color: #1ac056;
+        text-decoration: none;
+    }
+    /*ddrugi sposob robienia menu przez chcxbox + label*/
+    /*    ukrywamy checkboxa i labelke*/
+    
+    #menu .toggle,
+    #drop {
+        display: none;
+    }
+    /*HEADER*/
+    /*dla heada wysokosc 95% okna przegladarki*/
+    
+    #head {
+        text-align: center;
+        position: relative;
+        height: 95vh;
+        /*    background-position: bottom;*/
+        background-image: url('../img/header-background.jpg');
+        background-size: cover;
+    }
+    /*pozycja glownego headera*/
+    
+    #main-name {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .dropdown:hover {
+        cursor: pointer;
+    }
+    /*ustawiam czcionke i kolor dla calego headera*/
+    /*imie i nazwisko ze zmienionym drugim elementem*/
+    
+    #main-name .name {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100;
+        color: white;
+    }
+    
+    #main-header-text {
+        font-size: 56px;
+    }
+    
+    #main-header-text .name {
+        font-weight: bold;
+        color: #1ac056;
+    }
+    /*zawod*/
+    
+    #main-name h2 {
+        font-size: 32px;
+        font-weight: 100;
+    }
+    /*marginesy i czcionka nagłowka - uzywana do innych sekcji tez!*/
+    
+    .sec-head {
+        margin: 30px;
+        font-weight: lighter;
+    }
+    /*drugi wyraz na zielono*/
+    
+    .sec-head .name {
+        color: #1ac056;
+        font-weight: bold;
+    }
+    /* SEKCJA O MNIE */
+    /*    glowna sekcja z wcieciem w całej sekcji*/
+    
+    #bio {
+        padding: 20px;
+        background-color: #f9fcfe;
+        text-align: center;
+        box-shadow: 10px 5px 5px #888888;
+    }
+    /*artykuul bez headera*/
+    
+    #bio-content {
+        padding: 0 20px;
+        /*likwidacja floata */
+        overflow: hidden;
+    }
+    /*stylowanie diva zdjęcia*/
+    /*figure 50% szerokoesci */
+    
+    #bio-content #portrait {
+        display: inline-block;
+        width: 50%;
+        float: left;
+        margin: auto;
+    }
+    /*stylowanie samego zdjecia*/
+    
+    #bio-content #portrait img {
+        border-radius: 10px;
+        border: 5px solid white;
+        width: 55%;
+    }
+    /*div z opisem, 50% szerokosci do lewej*/
+    
+    #bio-content #descr {
+        display: inline-block;
+        margin: 0px;
+        width: 50%;
+    }
+    
+    #bio-content p {
+        margin: 0px;
+        text-align: left;
+    }
+    /*KOLEJNA SEKCJA UMIEJETNOSCI*/
+    
+    #skills {
+        padding: 20px;
+        text-align: center;
+    }
+    
+    #skills-content {
+        padding: 20px 80px;
+    }
+    
+    #skills-icons {
+        margin-top: 30px;
+    }
+    /*stylowanie ikon, marginesy nam sie dołozyły same wiec ich nie ruszamy*/
+/*    inline block nam zapewni odpowiednie zachowanie przy zmniejszaniu, ikonki będą nam 'spadac'*/
+    .icons {
+        display: inline-block;
+    }
+    /*
+
+
+    /*KOLEJNA SEKCJA MOJE PORTFOLIO*/
+    /*    teksty bediemy mieli wysrodkowane*/
+    
+    #portfolio {
+        text-align: center;    
+    }
+
+    /*NOWE DIVY*/
+    /*    na poczatek mamy artykuł, overflow hidden, bo w srodku floatujemy divy zeby nie były rozgraniczone*/
+    
+    #port-sec {
+        padding: 0px 50px 50px;
+        /*        to nam redukuje overflowa, inaczej trzebaby dodac 4 pustego diva z samym clearem za naszymi 3 */
+        overflow: hidden;
+    }
+    /*glowne divy z tlem, jeden po drugim, po 33%, floatowane zeby mie było granic, cover zeby fotki łądnie sie ulozyly*/
+    
+    .port-cont {
+        display: inline-block;
+        width: 33.3%;
+        height: 350px;
+        float: left;
+        background-size: cover;
+    }
+    /*rozne tla*/
+    
+    #port1 {
+        background-image: url('../img/portfolio1.jpg');
+    }
+    
+    #port2 {
+        background-image: url('../img/portfolio2.jpg');
+    }
+    
+    #port3 {
+        background-image: url('../img/portfolio4.jpg');
+    }
+    /*div ukryty, width automatycznie na 100%, padding zeby ramka ładnie odstawaała, plus tranzycja*/
+    
+    #port-sec .content-hidden {
+        opacity: 0.0;
+        height: 100%;
+        background-color: rgba(42, 61, 79, 0.5);
+        transition-duration: 0.5s;
+        transition-timing-function: linear;
+        padding: 5%;
+    }
+    
+    #port-sec .content-hidden:hover {
+        opacity: 1.0;
+        cursor: pointer;
+    }
+    /*wewnetrzna czesc z ramką, pozycja relative, bo najbardziej wewnetrzny div z contentem chcemy sobie ladnie wysrodkowac */
+    
+    #port-sec .inner-content {
+        height: 100%;
+        border: 2px solid white;
+        position: relative;
+    }
+    
+    .content-pos {
+        /*        sposob na srodkowanie diva w drugim divie - nadrzedny jest relative podrzedny absolute, top 50% i odsuac na Y (na x mamy blokowy, pelna szerokors, text align center robi robote dla paragrafow i nagowkow*/
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+/*        utawienia co do tekstków*/
+        color: white;
+        text-decoration-style: solid;
+    }
+    /*marginesy dla tekstow w srodku*/
+    
+    #port-sec .inner-content p {
+        margin: 0;
+    }
+    
+    #port-sec .inner-content h4 {
+        font-size: 18px;
+        margin: 15px 0;
+    }
+    
+    #port-sec .inner-content h3 {
+        font-size: 22px;
+        margin: 15px 0;
+    }
+    
+    #port-sec .inner-content p {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+    
+    #port-sec .fa {
+        font-size: 28px;
+    }
+    
+    #port-sec .fa:hover {
+        color: #1ac056;
+    }
+
+
+    /*FOOTER*/
+    
+    #foot {
+        min-height: 385px;
+        padding: 10px;
+        background-color: #213b50;
+        overflow: hidden;
+    }
+    
+    #foot .sec-head {
+        font-size: 36px;
+        margin: 30px;
+        font-weight: 100;
+        color: #FFF;
+    }
+    /*drugi wyraz na zielono*/
+    
+    #foot .sec-head .name {
+        color: #1ac056;
+        font-weight: normal;
+    }
+    
+    #contact {
+        display: inline-block;
+        width: 50%;
+        height: 100%;
+        float: left;
+        padding: 20px 0 0 32px;
+        text-decoration: none;
+    }
+    /*    ikony przez img*/
+    /*
+    #icons {
+        display: inline-block;
+        text-align: center;
+    }
 */
-
-
-/*KOLEJNA SEKCJA MOJE PORTFOLIO*/
-
-#portfolio {
-    text-align: center;
-    padding: 20px;
-}
-
-
-/*NOWE DIVY*/
-
-#port-sec {
-    width: 90vw;
-    padding: 10px;
-    margin: auto;
-    overflow: hidden;
-}
-
-
-/*glowne divy z tlem*/
-
-.port-cont {
-    display: inline-block;
-    width: 33.3%;
-    height: 350px;
-    float: left;
-    background-size: cover;
-}
-
-
-/*rozne tla*/
-
-#port1 {
-    background-image: url('../img/portfolio1.jpg');
-}
-
-#port2 {
-    background-image: url('../img/portfolio2.jpg');
-}
-
-#port3 {
-    background-image: url('../img/portfolio4.jpg');
-}
-
-
-/*div ukryty*/
-
-#port-sec .content-hidden {
-    opacity: 0.0;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(42, 61, 79, 0.5);
-    top: 0px;
-    transition-duration: 0.5s;
-    transition-timing-function: linear;
-    padding: 5%;
-}
-
-#port-sec .content-hidden:hover {
-    opacity: 1.0;
-    cursor: pointer;
-}
-
-
-/*wewnetrzna czesc z ramką*/
-
-#port-sec .inner-content {
-    /*    display: inline-block;*/
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    border: 2px solid white;
-    overflow: hidden;
-    color: white;
-    text-decoration-style: solid;
-    position: relative;
-}
-
-#port-sec .inner-content p {
-    margin: 0;
-}
-
-#port-sec .inner-content h4 {
-    font-size: 18px;
-    margin: 15px 0;
-}
-
-#port-sec .inner-content h3 {
-    font-size: 22px;
-    margin: 15px 0;
-}
-
-#port-sec .inner-content p {
-    font-size: 12px;
-    margin-bottom: 15px;
-}
-
-#port-sec .fa {
-    font-size: 28px;
-}
-
-#port-sec .fa:hover {
-    color: #1ac056;
-}
-
-.content-pos {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-
-/*FOOTER - tu tez nic sie nie bedzie dzialo ?*/
-
-#foot {
-    min-height: 385px;
-    padding: 10px;
-    background-color: #213b50;
-    text-align: left;
-    overflow: hidden;
-    /*    taki jak copyright section*/
-    padding-bottom: 3vh;
-}
-
-#foot .sec-head {
-    font-size: 36px;
-    margin: 30px;
-    font-weight: 100;
-    color: #FFF;
-}
-
-
-/*drugi wyraz na zielono*/
-
-#foot .sec-head .name {
-    color: #1ac056;
-    font-weight: normal;
-}
-
-#contact {
-    display: inline-block;
-    width: 50%;
-    height: 100%;
-    float: left;
-    padding: 20px 0 0 32px;
-    text-decoration: none;
-}
-
-
-/*dzieki temu po zwezeniu ikonka nam spadnie na srodek*/
-
-#icons {
-    display: inline-block;
-    text-align: center;
-}
-
-#icons img {
-    margin-right: 15px;
-    width: 40px;
-}
-
-#form {
-    width: 50%;
-    float: right;
-    text-align: right;
-}
-
-#form input,
-#form textarea {
-    width: 100%;
-    margin-bottom: 20px;
-    background-color: #204060;
-    border: none;
-    color: #c0c0c0;
-}
-
-#form input {
-    height: 30px;
-}
-
-#form input[type="submit"] {
-    width: 100px;
-    height: 50px;
-    font-size: 16px;
-    color: white;
-    border: 1px solid white;
-    background-color: #1ac056;
-    text-transform: uppercase;
-}
-
-#form input[type="submit"]:hover {
-    cursor: pointer;
-}
-
-#contact-content,
-#phone-mail {
-    color: white;
-    font-style: normal;
-    margin-bottom: 40px;
-}
-
-#phone-mail a {
-    text-decoration: none;
-    color: #1ac056;
-}
-
-
-/*copyright*/
-
-#copyright {
-    background: #000;
-    color: white;
-    text-align: left;
-    height: 3vh;
-}
-
-#copyright p {
-    min-height: 20px;
-    margin: 0;
-}
+    /*
+    #icons img {
+        margin-right: 15px;
+        width: 40px;
+    }
+*/
+    /*ikonki inny sposob*/
+    /* Style all font awesome icons */
+    
+    .fa-facebook,
+    .fa-twitter,
+    .fa-google,
+    .fa-linkedin {
+        background: #213b50;
+        color: white;
+        font-size: 30px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        border: 1px solid white;
+        border-radius: 50%;
+        text-align: center;
+        text-decoration: none;
+    }
+    /* Add a hover effect if you want */
+    
+    .fa:hover {
+        opacity: 0.7;
+    }
+    
+    #form {
+        width: 50%;
+        float: right;
+        text-align: right;
+    }
+    /*style dla pól formularza*/
+    
+    #form input,
+    #form textarea {
+        width: 100%;
+        margin-bottom: 20px;
+        background-color: #204060;
+        border: 1px solid #204060;
+        color: #c0c0c0;
+    }
+    
+    #form input {
+        height: 30px;
+    }
+    /*    przycisk submit stylowanie*/
+    
+    #form input[type="submit"] {
+        width: 100px;
+        height: 50px;
+        font-size: 16px;
+        color: white;
+        border: 1px solid white;
+        background-color: #1ac056;
+        text-transform: uppercase;
+    }
+    
+    #form input[type="submit"]:hover {
+        cursor: pointer;
+    }
+    
+    #form input:focus {
+        background-color: #264d73;
+        border: 1px solid white;
+    }
+    
+    #form textarea:focus {
+        background-color: #264d73;
+        border: 1px solid white;
+    }
+    /*    zeby nie zmieniało nam kolorou po autofill*/
+    
+    input:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0 30px #204060 inset;
+        -webkit-text-fill-color: #c0c0c0;
+    }
+    /*    stylujemy teksty kontaktu*/
+    
+    #contact-content,
+    #phone-mail {
+        color: white;
+        font-style: normal;
+        margin-bottom: 40px;
+        margin-top: 0px;
+    }
+    
+    #phone-mail a {
+        text-decoration: none;
+        color: #1ac056;
+    }
+    /*copyright section cała szerokosc, wysokosc zalezna od typu przegladania*/
+    
+    #copyright {
+        background: #000;
+        color: #FFFFFF;
+        text-align: left;
+        padding: 0 80px;
+    }
+    
+    #copyright p {
+        min-height: 20px;
+        margin: 0;
+    }
