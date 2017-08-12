@@ -37,7 +37,7 @@
 
              max_width = $("#rozsuwane_main").width();
              $("#rozsuwane2").stop().animate({
-                     width: 0.4 * max_width + "px"
+                     width: 0.2 * max_width + "px"
 
                  }, {
                      duration: duration,
@@ -47,7 +47,7 @@
 
              );
              $("#rozsuwane1").stop().animate({
-                 width: 0.6 * max_width + "px"
+                 width: 0.8 * max_width + "px"
              }, {
                  duration: duration,
                  complete: function () {
@@ -123,7 +123,7 @@
 
              max_width = $("#rozsuwane_main").width();
              $("#rozsuwane1").stop().animate({
-                     width: 0.4 * max_width + "px"
+                     width: 0.2 * max_width + "px"
 
                  }, {
                      duration: duration,
@@ -133,7 +133,7 @@
 
              );
              $("#rozsuwane2").stop().animate({
-                 width: 0.6 * max_width + "px"
+                 width: 0.8 * max_width + "px"
              }, {
                  duration: duration,
                  complete: function () {
@@ -213,7 +213,7 @@
 
              max_width = $("#rozsuwane_main").width();
              $("#rozsuwane4").stop().animate({
-                     width: 0.4 * max_width + "px"
+                     width: 0.2 * max_width + "px"
 
                  }, {
                      duration: duration,
@@ -223,7 +223,7 @@
 
              );
              $("#rozsuwane3").stop().animate({
-                 width: 0.6 * max_width + "px"
+                 width: 0.8 * max_width + "px"
              }, {
                  duration: duration,
                  complete: function () {
@@ -302,7 +302,7 @@
 
              max_width = $("#rozsuwane_main").width();
              $("#rozsuwane3").stop().animate({
-                     width: 0.4 * max_width + "px"
+                     width: 0.2 * max_width + "px"
 
                  }, {
                      duration: duration,
@@ -312,7 +312,7 @@
 
              );
              $("#rozsuwane4").stop().animate({
-                 width: 0.6 * max_width + "px"
+                 width: 0.8 * max_width + "px"
              }, {
                  duration: duration,
                  complete: function () {
