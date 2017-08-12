@@ -18,7 +18,7 @@
         width: 100%;
         text-align: right;
         background: #f9fcfe;
-        z-index: 1;
+        z-index: 10;
     }
     /*li jeden obok drugiego*/
     
@@ -203,7 +203,8 @@ https://stackoverflow.com/questions/6293588/how-to-create-an-html-checkbox-with-
         margin-top: 30px;
     }
     /*stylowanie ikon, marginesy nam sie dołozyły same wiec ich nie ruszamy*/
-/*    inline block nam zapewni odpowiednie zachowanie przy zmniejszaniu, ikonki będą nam 'spadac'*/
+    /*    inline block nam zapewni odpowiednie zachowanie przy zmniejszaniu, ikonki będą nam 'spadac'*/
+    
     .icons {
         display: inline-block;
     }
@@ -213,10 +214,11 @@ https://stackoverflow.com/questions/6293588/how-to-create-an-html-checkbox-with-
     /*KOLEJNA SEKCJA MOJE PORTFOLIO*/
     /*    teksty bediemy mieli wysrodkowane*/
     
-    #portfolio {
-        text-align: center;    
+    #portfolio,
+    #portfolio2,
+    #portfolio3 {
+        text-align: center;
     }
-
     /*NOWE DIVY*/
     /*    na poczatek mamy artykuł, overflow hidden, bo w srodku floatujemy divy zeby nie były rozgraniczone*/
     
@@ -264,7 +266,7 @@ https://stackoverflow.com/questions/6293588/how-to-create-an-html-checkbox-with-
     }
     /*wewnetrzna czesc z ramką, pozycja relative, bo najbardziej wewnetrzny div z contentem chcemy sobie ladnie wysrodkowac */
     
-    #port-sec .inner-content {
+    .inner-content {
         height: 100%;
         border: 2px solid white;
         position: relative;
@@ -277,7 +279,7 @@ https://stackoverflow.com/questions/6293588/how-to-create-an-html-checkbox-with-
         width: 100%;
         -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
-/*        utawienia co do tekstków*/
+        /*        utawienia co do tekstków*/
         color: white;
         text-decoration-style: solid;
     }
@@ -306,11 +308,141 @@ https://stackoverflow.com/questions/6293588/how-to-create-an-html-checkbox-with-
         font-size: 28px;
     }
     
-    #port-sec .fa:hover {
+    .fa:hover {
         color: #1ac056;
     }
-
-
+    /*portfolio 2 rozsuwane kolumny*/
+    
+    #rozsuwane_main {
+/*        height: 400px;*/
+        width: 100%;
+        background-color: transparent;
+        overflow: hidden;
+        padding: 0px 50px 50px;
+    }
+    /*508078340*/
+    
+    .rozsuwane {
+        display: inline-block;
+        width: 25%;
+        height: 400px;
+        float: left;
+        /*    transition: all 1s;*/
+    }
+    
+    .rozsuwane:hover {
+        cursor: pointer;
+    }
+    
+    #rozsuwane1 {
+        background-image: url('../img/portfolio1.jpg');
+        background-size: cover;
+    }
+    
+    #rozsuwane2 {
+        background-image: url('../img/portfolio2.jpg');
+        background-size: cover;
+    }
+    
+    #rozsuwane3 {
+        background-image: url('../img/portfolio3.jpg');
+        background-size: cover;
+    }
+    
+    #rozsuwane4 {
+        background-image: url('../img/portfolio4.jpg');
+        background-size: cover;
+    }
+    
+    .mask {
+        background-color: rgba(42, 61, 79, 0.5);
+        transition: opacity 0.3s;
+        height: 100%;
+        opacity: 0.0;
+        padding: 5%;
+    }
+    /*portfolio typ 3 odwracane*/
+    
+    #odwracane_main {
+/*        height: 400px;*/
+        width: 100%;
+        background-color: transparent;
+        overflow: hidden;
+        padding: 0px 50px 50px;
+    }
+    
+    .inbox {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: all 0.5s;
+    }
+    
+    #flip_1,
+    #flip_2 {
+        width: 49%;
+        height: 400px;
+        position: relative;
+        display: inline-block;
+    }
+    
+    #flip_1_front,
+    #flip_2_front {
+        background-image: url('../img/portfolio1.jpg');
+        background-size: cover;
+        z-index: 1;
+        backface-visibility: hidden;
+    }
+    /*obroc na starcie do 180 stopni*/
+    
+    #flip_1_back,
+    #flip_2_back {
+        background-image: url('../img/portfolio2.jpg');
+        background-size: cover;
+        transform: rotateY(180deg);
+    }
+    /*obroc do 180 stopni, plecy są ustawione jako niewidoczne*/
+    
+    #flip_1:hover #flip_1_front {
+        transform: rotateY(180deg);
+    }
+    /*obroc z powrotem do 0 stopni*/
+    
+    #flip_1:hover #flip_1_back {
+        transform: rotateY(0deg);
+    }
+    
+    #flip_2_front {
+        background-image: url('../img/portfolio3.jpg');
+    }
+    /*obroc na starcie do 180 stopni*/
+    
+    #flip_2_back {
+        background-image: url('../img/portfolio4.jpg');
+    }
+    /*obroc do 180 stopni, plecy są ustawione jako niewidoczne*/
+    
+    #flip_2:hover #flip_2_front {
+        transform: rotateY(180deg);
+    }
+    /*obroc z powrotem do 0 stopni*/
+    
+    #flip_2:hover #flip_2_back {
+        transform: rotateY(0deg);
+    }
+    
+    #flip_2:hover,
+    #flip_1:hover {
+        cursor: pointer;
+    }
+    
+    .mask_flip {
+        background-color: rgba(42, 61, 79, 0.5);
+        height: 100%;
+        padding: 5%;
+    }
     /*FOOTER*/
     
     #foot {

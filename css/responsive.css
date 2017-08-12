@@ -25,6 +25,10 @@
     #bio-content #portrait img {
         width: 65%;
     }
+    .rozsuwane {
+        width: 50%;
+        /*    transition: all 1s;*/
+    }
 }
 
 @media screen and (max-width: 768px) and (min-width: 480px) {
@@ -56,6 +60,13 @@
     #port-sec .port-cont:last-child {
         width: 100%;
         height: 300px;
+    }
+    #rozsuwane1,
+    #rozsuwane2,
+    #rozsuwane3,
+    #rozsuwane4 {
+        width: 50%;
+        /*    transition: all 1s;*/
     }
 }
 
@@ -104,6 +115,17 @@
     }
     .port-cont {
         height: 400px;
+        width: 100%;
+    }
+    #rozsuwane1,
+    #rozsuwane2,
+    #rozsuwane3,
+    #rozsuwane4{
+        width: 50%;
+        /*    transition: all 1s;*/
+    }
+    #flip_1,
+    #flip_2 {
         width: 100%;
     }
     /*    footer */
@@ -192,6 +214,18 @@
     .port-cont {
         width: 100%;
         height: 300px;
+    }
+    
+    #rozsuwane1,
+    #rozsuwane2,
+    #rozsuwane3,
+    #rozsuwane4 {
+        width: 50%;
+        /*    transition: all 1s;*/
+    }
+    #flip_1,
+    #flip_2 {
+        width: 100%;
     }
     /*    footer */
     #foot .sec-head {
