@@ -62,7 +62,7 @@
      });
 
      $("#rozsuwane1").mouseleave(function () {
-
+         win_width = $(window).width();
          if (win_width > 992) {
              max_width = $("#rozsuwane_main").width() * 0.995;
              $("#rozsuwane1_mask").css('opacity', '0.0');
@@ -97,6 +97,7 @@
      });
 
      $("#rozsuwane2").mouseenter(function () {
+         win_width = $(window).width();
          if (win_width > 992) {
              max_width = $("#rozsuwane_main").width() * 0.995;
              $(".rozsuwane").stop().animate({
@@ -147,6 +148,7 @@
      });
 
      $("#rozsuwane2").mouseleave(function () {
+         win_width = $(window).width();
          if (win_width > 992) {
              max_width = $("#rozsuwane_main").width() * 0.995;
              $("#rozsuwane2_mask").css('opacity', '0.0');
@@ -185,6 +187,7 @@
 
 
      $("#rozsuwane3").mouseenter(function () {
+         win_width = $(window).width();
          if (win_width > 992) {
              max_width = $("#rozsuwane_main").width() * 0.995;
              $(".rozsuwane").stop().animate({
@@ -235,6 +238,7 @@
      });
 
      $("#rozsuwane3").mouseleave(function () {
+         win_width = $(window).width();
          if (win_width > 992) {
              max_width = $("#rozsuwane_main").width() * 0.995;
              $("#rozsuwane3_mask").css('opacity', '0.0');
@@ -271,6 +275,7 @@
      });
 
      $("#rozsuwane4").mouseenter(function () {
+         win_width = $(window).width();
          if (win_width > 992) {
              max_width = $("#rozsuwane_main").width() * 0.995;
              $(".rozsuwane").stop().animate({
@@ -322,6 +327,7 @@
      });
 
      $("#rozsuwane4").mouseleave(function () {
+         win_width = $(window).width();
          if (win_width > 992) {
              max_width = $("#rozsuwane_main").width() * 0.995;
              $("#rozsuwane4_mask").css('opacity', '0.0');
@@ -358,89 +364,22 @@
          }
      });
 
-
-
-
-
-
-
-
-
-     //     
-     //     $("#rozsuwane1").mouseover(function () {
-     //         $(".rozsuwane").animate({
-     //             width: "20%"
-     //         }, 0, 'linear');
-     //         
-     //         $("#rozsuwane1").animate({
-     //             width: "40%"
-     //         },
-     //         { 
-     //            complete: function () { }, queue: false }
-     //            ,'linear');
-     //     });
-     //
-     //     $("#rozsuwane1").mouseout(function () {
-     //         $(".rozsuwane").animate({
-     //             width: "25%"
-     //         }, 0, 'linear');
-     //
-     //     });
-     //     $("#rozsuwane2").mouseover(function () {
-     //         $(".rozsuwane").animate({
-     //             width: "20%"
-     //         }, 0, 'linear');
-     //         $("#rozsuwane2").animate({
-     //             width: "40%"
-     //         }, 0, 'linear');
-     //     });
-     //
-     //     $("#rozsuwane2").mouseout(function () {
-     //         $(".rozsuwane").animate({
-     //             width: "25%"
-     //         }, 0, 'linear');
-     //
-     //     });
-     //
-     //     $("#rozsuwane3").mouseover(function () {
-     //         $(".rozsuwane").animate({
-     //             width: "20%"
-     //         }, 0, 'linear');
-     //         $("#rozsuwane3").animate({
-     //             width: "40%"
-     //         }, 0, 'linear');
-     //     });
-     //
-     //     $("#rozsuwane3").mouseout(function () {
-     //         $(".rozsuwane").animate({
-     //             width: "25%"
-     //         }, 0, 'linear');
-     //
-     //     });
-     //
-     //     $("#rozsuwane4").mouseover(function () {
-     //         $(".rozsuwane").animate({
-     //             width: "20%"
-     //         }, 0, 'linear');
-     //         $("#rozsuwane4").animate({
-     //             width: "40%"
-     //         }, 0, 'linear');
-     //     });
-     //
-     //     $("#rozsuwane4").mouseout(function () {
-     //         $(".rozsuwane").animate({
-     //             width: "25%"
-     //         }, 0, 'linear');
-     //
-     //     });
-
-
  });
 
 
  $(window).resize(function () {
-     max_width = $("#rozsuwane_main").width() * 0.995;
-     $(".rozsuwane").css({
-         width: 0.25 * max_width + "px"
-     });
- });
+     win_width = $(window).width();
+     if (win_width > 992) {
+         max_width = $("#rozsuwane_main").width() * 0.995;
+         $(".rozsuwane").css({
+             width: 0.25 * max_width + "px"
+         });}
+
+         else {
+             max_width = $("#rozsuwane_main").width();
+             $(".rozsuwane").css({
+                 width: 0.5 * max_width + "px"
+             });
+         }
+     }
+ );
